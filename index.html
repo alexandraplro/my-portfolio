@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alexandra Plazas - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Alexandra Plazas
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          aplazas@fakemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +1234567890
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="23-26-20-784__340.jpg" class="profile_image" width="25px" height="15px"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Alexandra Plazas! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a strategic communications and media relations professional with experience in print and digital media. 
+            <br/>
+            <br>
+            I have more than eight years of experience developing, implementing, and leading digital communication strategies, external outreach, public and media relations. 
+            I have worked in areas related to international development, migration, and financial services. 
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+
+        <div class="skill">
+            <img src="mailchimp-sq-810x810.jpg"/>
+            <h6>MailChimp</h6>
+            <p>6 years experience</p>
+          </div>  
+  
+          <div class="skill">
+            <img src="240px-Drupal-wordmark.svg.png"/>
+            <h6>Drupal</h6>
+            <p>3 years experience</p>
+          </div>
+
+          <div class="skill">
+            <img src="1080px-WordPress_logo.svg.png"/>
+            <h6>WordPress</h6>
+            <p>2 years experience</p>
+          </div>  
+  
+          <div class="skill">
+            <img src="440px-GAnalytics.svg.png"/>
+            <h6>Social Media Metrics</h6>
+            <p>6 years experience</p>
+          </div>
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Media Relations</h3>
+            <ul>
+              <li>Developed and implemented media outreach strategies with local, national and international media outlets to bring visibility to organizations and their goals and missions</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Social Media Management</h3>
+            <ul>
+              <li>Led the development of social media content and strategies across different platforms in Spanish and English and measured metrics to track their performance</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Content Management</h3>
+            <ul>
+              <li>Created content and materials such as annual reports, newsletters, op-eds, success stories, fact-sheets, and infographics to communicate the work of organizations across different platforms</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had the opportunity to work with Alexandra on different projects. 
+          She has a great ability to keep track of tasks with multiple teams. 
+          She always met deadlines and her deliverables were outstanding. 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Alexandra has developed successful media strategies for our organization. 
+          Her work has resulted in media visibility in international media outlets like Sky News.
+          She knows how to build rapport with journalists in different locations and areas of expertise. 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I met Alexandra while working on the development of the annual report for our organization. 
+          Alexandra developed comprehensive and appealing content about our accomplishments and implemented a new way to display our annual reports on the website. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Your recommendation has been submitted successfully!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
